@@ -3,3 +3,4 @@ build
 /bootstrap.*
 sass/example/bootstrap.js
 sass/example/example.css
+.idea/workspace.xml

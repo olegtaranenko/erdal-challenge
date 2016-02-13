@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/build" />
+      <excludeFolder url="file://$MODULE_DIR$/ext/builds" />
+      <excludeFolder url="file://$MODULE_DIR$/ext/locale" />
+      <excludeFolder url="file://$MODULE_DIR$/ext/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/sass/example" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
