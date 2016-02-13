@@ -1,3 +1,5 @@
 ext
 build
-/bootstrap.js*
+/bootstrap.*
+sass/example/bootstrap.js
+sass/example/example.css
