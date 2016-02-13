@@ -15,9 +15,7 @@ Ext.define('Erdal.store.MyStore', {
     model: 'Erdal.model.MyModel',
 
     data : [
-        {firstName: 'Ed',    lastName: 'Spencer'},
-        {firstName: 'Tommy', lastName: 'Maintz'},
-        {firstName: 'Aaron', lastName: 'Conran'},
-        {firstName: 'Jamie', lastName: 'Avins'}
+        {id: 1, date: '02/13/2016',    description: ' * Created by JetBrains WebStorm. <br/>* User: user1 <br/>* Date: 13.02.16 <br/>* Time: 22:32 '},
+        {id: 2, date: '02/13/2016 22:10',    description: 'Erdal.model.MyModel'},
     ]
 });

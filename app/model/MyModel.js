@@ -7,11 +7,9 @@
 Ext.define('Erdal.model.MyModel', {
     extend: 'Ext.data.Model',
 
-    proxy: 'memory',
     fields: [
-        {name: 'firstName', type: 'string'},
-        {name: 'lastName',  type: 'string'},
-        {name: 'age',       type: 'int'},
-        {name: 'eyeColor',  type: 'string'}
+        {name: 'id', type: 'int'},
+        {name: 'description',  type: 'string'},
+        {name: 'date',  type: 'date'}
     ]
 });

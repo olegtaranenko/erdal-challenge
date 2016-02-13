@@ -6,12 +6,22 @@
  */
 Ext.define('Erdal.view.MyGrid', {
     extend: 'Ext.grid.Panel',
+    requires: [
+        'Ext.grid.column.Date'
+    ],
+
+    plugins: [],
 
     xtype: 'mygrid',
 
     store: 'MyStore',
 
+    rowLines: true,
+    colLines: true,
+
     columns: [
-        {name: 'name', dataIndex: 'firstName'}
+        {text: 'Id', dataIndex: 'id', width: 200},
+        {text: 'Description', dataIndex: 'description', flex: 1},
+        {text: 'Date', dataIndex: 'date', width: 200, xtype: 'datecolumn', format: 'M d, Y'}
     ]
 });
