@@ -2,7 +2,8 @@ Ext.define('Erdal.view.Main', {
     extend: 'Ext.container.Container',
     requires:[
         'Ext.tab.Panel',
-        'Ext.layout.container.Border'
+        'Ext.layout.container.Border',
+        'Erdal.view.MyGrid'
     ],
     
     xtype: 'app-main',
@@ -20,7 +21,8 @@ Ext.define('Erdal.view.Main', {
         region: 'center',
         xtype: 'tabpanel',
         items:[{
-            title: 'Center Tab 1'
+            xtype: 'mygrid',
+            title: 'Hello Rodrigo'
         }]
     }]
 });

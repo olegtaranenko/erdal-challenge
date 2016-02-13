@@ -3,6 +3,10 @@ Ext.define('Erdal.Application', {
 
     extend: 'Ext.app.Application',
 
+    requires: [
+        'Erdal.store.MyStore'
+    ],
+
     views: [
         // TODO: add views here
     ],
@@ -12,6 +16,6 @@ Ext.define('Erdal.Application', {
     ],
 
     stores: [
-        // TODO: add stores here
+        'MyStore'
     ]
 });
