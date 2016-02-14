@@ -7,21 +7,36 @@
 Ext.define('Erdal.view.MyGrid', {
     extend: 'Ext.grid.Panel',
     requires: [
-        'Ext.grid.column.Date'
+        'Erdal.ux.MyTextArea',
+        'Ext.grid.column.Column',
+        'Ext.grid.column.Date',
+        'Ext.grid.plugin.CellEditing'
     ],
 
-    plugins: [],
+    plugins: {
+        ptype: 'cellediting',
+        clicksToEdit: 1,
+        autoSize: true
+    },
 
     xtype: 'mygrid',
 
     store: 'MyStore',
+    selType: 'cellmodel',
 
     rowLines: true,
     colLines: true,
 
-    columns: [
-        {text: 'Id', dataIndex: 'id', width: 200},
-        {text: 'Description', dataIndex: 'description', flex: 1},
-        {text: 'Date', dataIndex: 'date', width: 200, xtype: 'datecolumn', format: 'M d, Y'}
-    ]
+    initComponent: function() {
+        var me = this;
+
+        me.columns = [
+            {text: 'Id', dataIndex: 'id', width: 200},
+            {text: 'Description', dataIndex: 'description', flex: 1, xtype: 'gridcolumn', editor: 'mytextarea'},
+            {text: 'Date', dataIndex: 'date', width: 200, xtype: 'datecolumn', format: 'M d, Y'}
+        ];
+
+        me.callParent(arguments);
+
+    }
 });
