@@ -1,34 +1,18 @@
-# Erdal/app
+# Erdal/app Build & Run
 
-This folder contains the javascript files for the application.
+1. Copy to ext folder ExtJS 4.2.5 distribution
 
-# Erdal/resources
+2. The application is build with Sencha Cmd 6.0.3.46
 
-This folder contains static resources (typically an `"images"` folder as well).
+To get 
+sencha app watch
+In browser open url http://localhost:1841
 
-# Erdal/overrides
 
-This folder contains override classes. All overrides in this folder will be 
-automatically included in application builds if the target class of the override
-is loaded.
+# Basic Usage
 
-# Erdal/sass/etc
+1. Single click on the cell Description at right grid.
 
-This folder contains misc. support code for sass builds (global functions, 
-mixins, etc.)
+2. modify content of the inline textarea editor. Enter to add new line, Shift-Enter to submit edited field
 
-# Erdal/sass/src
-
-This folder contains sass files defining css rules corresponding to classes
-included in the application's javascript code build.  By default, files in this 
-folder are mapped to the application's root namespace, 'Erdal'. The
-namespace to which files in this directory are matched is controlled by the
-app.sass.namespace property in Erdal/.sencha/app/sencha.cfg. 
-
-# Erdal/sass/var
-
-This folder contains sass files defining sass variables corresponding to classes
-included in the application's javascript code build.  By default, files in this 
-folder are mapped to the application's root namespace, 'Erdal'. The
-namespace to which files in this directory are matched is controlled by the
-app.sass.namespace property in Erdal/.sencha/app/sencha.cfg. 
+3. Grid's row's height will be adjusted to the entered line
